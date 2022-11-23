@@ -1,5 +1,21 @@
 apply plugin: "com.android.library"
+ext {
+    PUBLISH_GROUP_ID = 'io.gitlab.alexto9090'
+    PUBLISH_VERSION = '1.0.0'
+    PUBLISH_ARTIFACT_ID = 'huaweirateapp'
+    PUBLISH_DESCRIPTION = 'Rate App can be easily rate with rate dialog'
+    PUBLISH_URL = 'https://github.com/alexto9090/Huawei-RateApp'
+    PUBLISH_LICENSE_NAME = 'Apache License'
+    PUBLISH_LICENSE_URL = 'https://github.com/elye/loaderviewlibrary/blob/master/LICENSE'
+    PUBLISH_DEVELOPER_ID = 'alexto9090'
+    PUBLISH_DEVELOPER_NAME = 'Alexander Donayer'
+    PUBLISH_DEVELOPER_EMAIL = 'alexander_tauro_peru@outlook.com'
+    PUBLISH_SCM_CONNECTION = 'scm:git:gitlab.com/alexto9090/relativepopupwindow.git'
+    PUBLISH_SCM_DEVELOPER_CONNECTION = 'scm:git:ssh://github.com/alexto9090/Huawei-RateApp.git'
+    PUBLISH_SCM_URL = 'https://github.com/alexto9090/Huawei-RateApp'
+}
 
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
