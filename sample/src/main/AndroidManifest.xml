@@ -10,7 +10,8 @@
         >
         <activity
             android:name="com.alexto9090.rateapphuawei.sample.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
