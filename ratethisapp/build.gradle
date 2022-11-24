@@ -1,4 +1,5 @@
 apply plugin: "com.android.library"
+
 ext {
     PUBLISH_GROUP_ID = 'io.gitlab.alexto9090'
     PUBLISH_VERSION = '1.0.0'
@@ -10,7 +11,7 @@ ext {
     PUBLISH_DEVELOPER_ID = 'alexto9090'
     PUBLISH_DEVELOPER_NAME = 'Alexander Donayer'
     PUBLISH_DEVELOPER_EMAIL = 'alexander_tauro_peru@outlook.com'
-    PUBLISH_SCM_CONNECTION = 'scm:git:gitlab.com/alexto9090/relativepopupwindow.git'
+    PUBLISH_SCM_CONNECTION = 'scm:git:github.com/alexto9090/Huawei-RateApp.git'
     PUBLISH_SCM_DEVELOPER_CONNECTION = 'scm:git:ssh://github.com/alexto9090/Huawei-RateApp.git'
     PUBLISH_SCM_URL = 'https://github.com/alexto9090/Huawei-RateApp'
 }
@@ -39,4 +40,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.13.2'
     testImplementation "org.robolectric:robolectric:4.5"
+}
+repositories {
+    mavenCentral()
 }
